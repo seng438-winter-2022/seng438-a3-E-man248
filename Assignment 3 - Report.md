@@ -1,15 +1,31 @@
-Course Title: Software Testing, Reliability, and Quality Course Code:
-SENG 438 Assignment \#: 3 Student Names: Aashik Ilangovan (30085993)
-Emmanuel Omari-Osei (30092729) Gibran Akmal (30094918) Priyanka Gautam
-(30091244) Group Number: 31 Submission Date: 4/03/2022
+Course Title: Software Testing, Reliability, and Quality
+
+Course Code: SENG 438 Assignment \#: 3 Student Names:
+
+Aashik Ilangovan (30085993)
+
+Emmanuel Omari-Osei (30092729)
+
+Gibran Akmal (30094918)
+
+Priyanka Gautam (30091244)
+
+Group Number: 31
+
+Submission Date: 4/03/2022
 
 ### Manual Data-Flow Coverage Calculations the Two Methods
 
-#### A Detailed Description of the Testing strategy for the New Unit Tests:
+*(Please see attached PDF document with images for Data Flow Metrics and Calculations)*
+
+### A Detailed Description of the Testing Strategy for the New Unit Tests
+
 The testing strategy we developed for new unit tests consisted of some key points. Our main goal was to maximise our coverage in the following three categories: branch coverage, method coverage, and line coverage (statement coverage). Firstly, branch coverage is dictated mainly by how many paths our test covers for our conditional outcomes (branches). Our strategy for going about this was to target methods and code with many if statements and nested if statements. These pieces of code consisted of many potential branches, so we achieved large branch coverage by writing tests for these sections of code. Secondly, method coverage is determined by the number of methods and functions covered by our test cases. Our decided plan to tackle as many methods as possible in the least amount The tests to write were to target methods that are calling methods within them. This allowed us to be more efficient with our testing strategy, as we only had to write code for certain methods' functionalities. They would automatically test the functionality of methods called within them. This approach allowed us to minimise the number of tests we had to write as we avoided redundant writing tests for methods already being called within other methods. Lastly, line coverage is just the raw code or statements that our test cases cover. These include code within all branches and methods. We immediately saw large percentages of the line coverage in implementing the strategies used for the coverage mentioned above types. However, as much code as we tried to encapsulate with each line of our tests, there were certain methods that we unavoidably had to write extra test cases for to achieve the higher statement coverage.
 
-A high level description of five selected test cases you have designed
-using coverage information, and how they have increased code coverage:
+### High Level Description of Five Selected Test Cases
+
+*(Please see attached PDF document with images for Reported Code Coverage Metrics.)*
+
 Range Method 1
 
 The expandtoInclude method, as shown above is fully covered through our
@@ -94,15 +110,15 @@ Pros and cons of the coverage tools tried by your group in this
 assignment, in terms of reported measures, integration with the IDE and
 other plug-ins, user friendliness, crashes, etc.
 
-      The coverage tool our team used in this lab assessment was EclEmma. This tool coverage now comes built into the new Eclipse IDE configuration upon downloading Eclipse. This made the coverage tool installation very straightforward for our team since we all had up-to-date versions of Eclipse running on our computers, as they were needed for the previous lab assignment.
+The coverage tool our team used in this lab assessment was EclEmma. This tool coverage now comes built into the new Eclipse IDE configuration upon downloading Eclipse. This made the coverage tool installation very straightforward for our team since we all had up-to-date versions of Eclipse running on our computers, as they were needed for the previous lab assignment.
 
-      With the installation of the software out of the way, our team followed the lab report instructions on setting up coverage tests using EclEmma. This process was also made fairly simple in our group as this application had tools specially made for the Eclipse IDE that made running coverage tests just as easy as running them. Thus, we could conclude that EclEmma was optimally integrated for our IDE (Eclipse).
+With the installation of the software out of the way, our team followed the lab report instructions on setting up coverage tests using EclEmma. This process was also made fairly simple in our group as this application had tools specially made for the Eclipse IDE that made running coverage tests just as easy as running them. Thus, we could conclude that EclEmma was optimally integrated for our IDE (Eclipse).
 
-      Our group faced a challenge with this plug-in when performing condition coverage. EclEmma does not have any direct functionality that allows the condition coverage metric to be reported. Thankfully, it is detailed in the lab report that groups are allowed to report on method coverage instead of condition coverage for using EclEmma. While this allowed our group to carry on with the lab normally, for another testing situation this could pose a major hurdle and might require switching to another coverage algorithm.
+Our group faced a challenge with this plug-in when performing condition coverage. EclEmma does not have any direct functionality that allows the condition coverage metric to be reported. Thankfully, it is detailed in the lab report that groups are allowed to report on method coverage instead of condition coverage for using EclEmma. While this allowed our group to carry on with the lab normally, for another testing situation this could pose a major hurdle and might require switching to another coverage algorithm.
 
-      Aside from the absence of condition coverage, the plug-in was user friendly and made it clear which classes we were covering and by how much. This was displayed using visuals of green and red highlights on code that were covered and not covered respectively. Overall, we had a fairly good experience with the EclEmma coverage testing software.
+Aside from the absence of condition coverage, the plug-in was user friendly and made it clear which classes we were covering and by how much. This was displayed using visuals of green and red highlights on code that were covered and not covered respectively. Overall, we had a fairly good experience with the EclEmma coverage testing software.
 
-A discussion on how the team work/effort was divided and managed:
+How the team work/effort was divided and managed:
 Teamwork is a fundamental core part of software testing. In order to go
 through the test we read and did the preliminary parts of the test as a
 group (the setups in part 1) and proceeded to go through one testing
@@ -113,14 +129,14 @@ amounts. From there, we would proceed to have multiple group sessions
 where we worked individually on our own tests but configured with each
 other whenever needed.
 
-      A lesson learned throughout the entire process was that having more than one pair of eyes on an issue can provide faster and better solutions. For example, as we were first running through a test as a group, all of us had input our knowledge and ideas on how to set up the tests and do the test from previous courses. It provided an efficient process into creating a test for the example method as well as filled any knowledge gaps that we had going into the lab, allowing us to work on our own split individual tests as well. Each person was responsible for writing test cases for at least two methods and documenting their strategy. Furthermore, collaboration on one or two test cases allowed us to formulate the best estimations on how to increase overall coverage through trial and error and input from other team members. That way, when we went to individually work on each of our own tests, we already knew the main things to target to increase each type of coverage and did not have to spend a lot of time experimenting by ourselves.
+A lesson learned throughout the entire process was that having more than one pair of eyes on an issue can provide faster and better solutions. For example, as we were first running through a test as a group, all of us had input our knowledge and ideas on how to set up the tests and do the test from previous courses. It provided an efficient process into creating a test for the example method as well as filled any knowledge gaps that we had going into the lab, allowing us to work on our own split individual tests as well. Each person was responsible for writing test cases for at least two methods and documenting their strategy. Furthermore, collaboration on one or two test cases allowed us to formulate the best estimations on how to increase overall coverage through trial and error and input from other team members. That way, when we went to individually work on each of our own tests, we already knew the main things to target to increase each type of coverage and did not have to spend a lot of time experimenting by ourselves.
       
-      Teamwork is incredibly important in software development as "teamwork makes the dream work." Learning how to work in a team is imperative for engineers across all disciplines because it introduces them to varying new perspectives that only strengthen the final product. One of the key lessons that we learned about teamwork is that open communication, transparency and hard work are the foundations of any successful group. 
+Teamwork is incredibly important in software development as "teamwork makes the dream work." Learning how to work in a team is imperative for engineers across all disciplines because it introduces them to varying new perspectives that only strengthen the final product. One of the key lessons that we learned about teamwork is that open communication, transparency and hard work are the foundations of any successful group. 
 
-Any difficulties encountered, challenges overcome, and lessons learned
-from performing the assignment: There were a few challenges and lessons
-that came about while performing through the assignment. The first was
-downloading and implementing the coverage tools such as EclEmma and
+### Any Difficulties, Challenges, and Lessons Learned
+
+There were a few challenges and lessons that came about while performing through the assignment.
+The first was downloading and implementing the coverage tools such as EclEmma and
 getting it to work with our individual ide's and computers. Next, came
 the testing part, to which we had discovered multiple errors with our
 previous tests that we had not yet encountered prior to this assignment.
@@ -138,7 +154,7 @@ with our goal being to write the least number of tests with the most
 amount of coverage. The challenges we overcome the best include some of
 other
 
-Comments/feedback on the assignment itself:
+### Comments/Feedback on the Assignment Itself:
 
 Overall, the lab detailed a simple yet insightful experience in coverage
 testing. The experience induced a healthy working environment that
