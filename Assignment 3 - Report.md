@@ -5,32 +5,8 @@ Emmanuel Omari-Osei (30092729) Gibran Akmal (30094918) Priyanka Gautam
 
 ### Manual Data-Flow Coverage Calculations the Two Methods
 
-A detailed description of the testing strategy for the new unit tests:
-The testing strategy we developed for new unit tests consisted of some
-key points. Our main goal was to maximise our coverage in the following
-three categories: branch coverage, method coverage, and line coverage
-(statement coverage). Firstly, branch coverage is dictated mainly by how
-many paths our test covers for our conditional outcomes (branches). Our
-strategy for going about this was to target methods and code with many
-if statements and nested if statements. These pieces of code consisted
-of many potential branches, so we achieved large branch coverage by
-writing tests for these sections of code. Secondly, method coverage is
-determined by the number of methods and functions covered by our test
-cases. Our decided plan to tackle as many methods as possible in the
-least amount The tests to write were to target methods that are calling
-methods within them. This allowed us to be more efficient with our
-testing strategy, as we only had to write code for certain methods'
-functionalities. They would automatically test the functionality of
-methods called within them. This approach allowed us to minimise the
-number of tests we had to write as we avoided redundant writing tests
-for methods already being called within other methods. Lastly, line
-coverage is just the raw code or statements that our test cases cover.
-These include code within all branches and methods. We immediately saw
-large percentages of the line coverage in implementing the strategies
-used for the coverage mentioned above types. However, as much code as we
-tried to encapsulate with each line of our tests, there were certain
-methods that we unavoidably had to write extra test cases for to achieve
-the higher statement coverage.
+#### A Detailed Description of the Testing strategy for the New Unit Tests:
+The testing strategy we developed for new unit tests consisted of some key points. Our main goal was to maximise our coverage in the following three categories: branch coverage, method coverage, and line coverage (statement coverage). Firstly, branch coverage is dictated mainly by how many paths our test covers for our conditional outcomes (branches). Our strategy for going about this was to target methods and code with many if statements and nested if statements. These pieces of code consisted of many potential branches, so we achieved large branch coverage by writing tests for these sections of code. Secondly, method coverage is determined by the number of methods and functions covered by our test cases. Our decided plan to tackle as many methods as possible in the least amount The tests to write were to target methods that are calling methods within them. This allowed us to be more efficient with our testing strategy, as we only had to write code for certain methods' functionalities. They would automatically test the functionality of methods called within them. This approach allowed us to minimise the number of tests we had to write as we avoided redundant writing tests for methods already being called within other methods. Lastly, line coverage is just the raw code or statements that our test cases cover. These include code within all branches and methods. We immediately saw large percentages of the line coverage in implementing the strategies used for the coverage mentioned above types. However, as much code as we tried to encapsulate with each line of our tests, there were certain methods that we unavoidably had to write extra test cases for to achieve the higher statement coverage.
 
 A high level description of five selected test cases you have designed
 using coverage information, and how they have increased code coverage:
