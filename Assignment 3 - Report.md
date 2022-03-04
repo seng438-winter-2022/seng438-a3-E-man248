@@ -1,10 +1,17 @@
 Course Title: Software Testing, Reliability, and Quality
+
 Course Code: SENG 438 Assignment \#: 3 Student Names:
+
 Aashik Ilangovan (30085993)
+
 Emmanuel Omari-Osei (30092729)
+
 Gibran Akmal (30094918)
+
 Priyanka Gautam (30091244)
+
 Group Number: 31
+
 Submission Date: 4/03/2022
 
 ### Manual Data-Flow Coverage Calculations the Two Methods
