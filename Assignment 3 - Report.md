@@ -11,25 +11,25 @@
 #### Gibran Akmal (30094918)
 #### Priyanka Gautam (30091244)
 
-### Introduction
+## Introduction
 
 This report follows an in depth analysis of coverage testing and outlines the requirements found on the assignment sheet. The objectives of this assignment are to introduce the concepts of determining the adequacy of a white-box test suite based on its coverage of the code. 
 
-### Manual Data-Flow Coverage Calculations the Two Methods
+## Manual Data-Flow Coverage Calculations the Two Methods
 
 *(Please see attached PDF document with images for Data Flow Metrics and Calculations)*
 
-### A Detailed Description of the Testing Strategy for the New Unit Tests
+## A Detailed Description of the Testing Strategy for the New Unit Tests
 
 The testing strategy we developed for new unit tests consisted of some key points. Our main goal was to maximise our coverage in the following three categories: branch coverage, method coverage, and line coverage (statement coverage). Firstly, branch coverage is dictated mainly by how many paths our test covers for our conditional outcomes (branches). Our strategy for going about this was to target methods and code with many if statements and nested if statements. These pieces of code consisted of many potential branches, so we achieved large branch coverage by writing tests for these sections of code. Secondly, method coverage is determined by the number of methods and functions covered by our test cases. Our decided plan to tackle as many methods as possible in the least amount The tests to write were to target methods that are calling methods within them. This allowed us to be more efficient with our testing strategy, as we only had to write code for certain methods' functionalities. They would automatically test the functionality of methods called within them. This approach allowed us to minimise the number of tests we had to write as we avoided redundant writing tests for methods already being called within other methods. Lastly, line coverage is just the raw code or statements that our test cases cover. These include code within all branches and methods. We immediately saw large percentages of the line coverage in implementing the strategies used for the coverage mentioned above types. However, as much code as we tried to encapsulate with each line of our tests, there were certain methods that we unavoidably had to write extra test cases for to achieve the higher statement coverage.
 
-### High Level Description of Five Selected Test Cases
+## High Level Description of Five Selected Test Cases
 
 *(Please see attached PDF document with images for Reported Code Coverage Metrics.)*
 
-#### Range
+### Range
 
-##### Method 1:
+#### Method 1:
 
 The expandtoInclude method, as shown above is fully covered through our
 test cases (as highlighted in green).
@@ -44,7 +44,7 @@ The third test case, lessThanLower() is written and designed to test the second 
 
 The fourth test case, lessThanLower() is written and designed to test the else if statement in the SUT, which is checking to see whether the argument parameter value is greater than the argument parameter range's upper bound. In this test case, the value is 2.5 which is greater than the range's upper bound of 2.0. Thus, the first logical branch of the if statement is executed. The expandToInclude(Range range, double value) method will return a new Range where the upper bound = value [2.5] (passed in from the argument) and the lower bound = range's lower bound [1.0]
 
-##### Method 2:
+#### Method 2:
 
 The expand method, as shown above is fully covered
 through our test cases (as highlighted in green).
@@ -55,7 +55,7 @@ The first test case, RangeAppropriateValuesTest() is written and designed to tes
 
 The second test case, RangeAppropriateValuesTest() is written and designed to test the first if statement in the SUT, which is checking to see whether the argument parameter range new lower bound is greater than the range's new upper bound. In this test case, the argument parameter range that was passed has a new lower bound of 56.0 and a new upper bound of -16.0  thus, the first logical branch of the if statement is executed because lower is less than upper. The expand(Range range, double lowerMargin, double upperMargin) method will return a new Range where the lower bound = [11 - 9 (length of range) * 5  (lower margin passed in from the argument)] / 2.0 + (-16.0) / 2.0 = 20.0 and the upper bound is 20.0. 
 
-##### Method 3:
+#### Method 3:
 
 The method shift(Range base, double delta, boolean allowZeroCrossing) and its overloaded function shift(Range base, double delta) from Range class have been completely covered through testing, as visible above. Thus, the methods have 100% test coverage. The test cases for these methods were designed to ensure that all logical branches and all lines of code were tested. These test cases served to increase our test coverage for this method, which consequently increased the coverage for the whole Range class.
       
@@ -65,9 +65,9 @@ The second test case, shiftNotAllowingZeroCrossingWithDeltaNotEqualZero() is wri
 
 The third test case, shiftAllowZeroCrossingGivenZero() is written and designed to test the if branch of the if / else statement in the SUT, which is checking to see whether the parameter allowZeroCrossing = = true. In this test case, the argument parameter allowZeroCrossing of shift(Range base, double delta, boolean allowZeroCrossing) was passed as false. Thus, the first logical branch of the if statement is executed. As the method was tested, the if component of the logical branch of the statement was executed. This correctly outputs a new Range object appropriately shifted, meaning the test case passed.
 
-#### Data Utilities
+### Data Utilities
 
-##### Method 4:
+#### Method 4:
 
 As it can be seen, the method calculateRowTotal(Values2D data, int row, int[] validCols) from the DataUtilities class is entirely highlighted in green. This means that this method has been thoroughly tested, and has a 100% test coverage. The test cases for this method were designed to ensure that all logical branches, and all lines of the code in this method were tested. Through these test cases that we designed and executed, we increased our coverage for this method, which consequently increased the coverage for the whole DataUtilities class.
 
@@ -77,7 +77,7 @@ The second test case, calculateRowTotal_NullWithinRange() is written and designe
 
 The third test case, calculateRowTotal_NullExact() is written and designed to test the second if statement in the SUT. In this test case the argument "validCols" passed in is exactly equal to the number of columns being set in the @setup section. As well as just like in the previous test case, the final entry in that row is set to null. This should not change much as the method is expected once again to ignore the null entry in the row total calculations and we should be returned the value of 20.0.
 
-##### Method 5:
+#### Method 5:
 
 The method clone(double[][] source) from DataUtilities class is entirely highlighted in green. This means that this method has been thoroughly tested, and has a 100% test coverage. The test cases for this method were designed to ensure that all logical branches, and all lines of the code in this method were tested. Through these test cases that we designed and executed, we increased our coverage for this method, which consequently increased the coverage for the whole DataUtilities class. 
 
@@ -101,7 +101,7 @@ DataUtilities Method Counter \~ 90.0%
 
 Line Counter \~ 98
 
-### Comparison on the Advantages and Disadvantages of Requirements-Based Test Generation and Coverage-Based Test Generation
+## Comparison on the Advantages and Disadvantages of Requirements-Based Test Generation and Coverage-Based Test Generation
 
 Requirements-based testing is where the test cases are developed by obtaining information from the requirements. Advantages of this testing approach allow the testers to perform both  functional and non functional tests. Attributes such as performance, reliability and usability of the system are tested through this approach. An advantage of this type of testing is that it is easy to validate if the requirements of the system are correct. For example, in assignment 2, when using the black-box approach, we used requirements based testing to write test suites. These test suites were able to test the qualitative aspects of the SUT. It ensured the functionality of the methods was behaving appropriately. Disadvantages of this type of testing is that there are a greater number of unidentified bugs. This is because since you cannot actually see how much of the source code your tests have covered, you cannot know for certain if you have tested for every logical path. Since there are bound to be paths that have not been tested, there could be potential bugs in the code that go undetected which weakens the reliability of the whole SUT. 
 
@@ -119,7 +119,7 @@ Our group faced a challenge with this plug-in when performing condition coverage
 
 Aside from the absence of condition coverage, the plug-in was user friendly and made it clear which classes we were covering and by how much. This was displayed using visuals of green and red highlights on code that were covered and not covered respectively. Overall, we had a fairly good experience with the EclEmma coverage testing software.
 
-### How the Team Work/Effort was Divided and Managed
+## How the Team Work/Effort was Divided and Managed
 
 Teamwork is a fundamental core part of software testing. In order to go
 through the test we read and did the preliminary parts of the test as a
@@ -135,7 +135,7 @@ A lesson learned throughout the entire process was that having more than one pai
       
 Teamwork is incredibly important in software development as "teamwork makes the dream work." Learning how to work in a team is imperative for engineers across all disciplines because it introduces them to varying new perspectives that only strengthen the final product. One of the key lessons that we learned about teamwork is that open communication, transparency and hard work are the foundations of any successful group. 
 
-### Any Difficulties, Challenges, and Lessons Learned
+## Any Difficulties, Challenges, and Lessons Learned
 
 There were a few challenges and lessons that came about while performing through the assignment.
 The first was downloading and implementing the coverage tools such as EclEmma and
@@ -156,7 +156,7 @@ with our goal being to write the least number of tests with the most
 amount of coverage. The challenges we overcome the best include some of
 other
 
-### Comments/Feedback on the Assignment
+## Comments/Feedback on the Assignment
 
 Overall, the lab detailed a simple yet insightful experience in coverage
 testing. The experience induced a healthy working environment that
