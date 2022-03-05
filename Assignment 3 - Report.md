@@ -1,18 +1,19 @@
-Course Title: Software Testing, Reliability, and Quality
+# Course Title: Software Testing, Reliability, and Quality
+#### Course Code: SENG 438
+#### Assignment #: 3
 
-Course Code: SENG 438 Assignment \#: 3 Student Names:
+#### Group Number: 31
+#### Submission Date: 4/03/2022
 
-Aashik Ilangovan (30085993)
+### Student Names:
+#### Aashik Ilangovan (30085993)
+#### Emmanuel Omari-Osei (30092729)
+#### Gibran Akmal (30094918)
+#### Priyanka Gautam (30091244)
 
-Emmanuel Omari-Osei (30092729)
+### Introduction
 
-Gibran Akmal (30094918)
-
-Priyanka Gautam (30091244)
-
-Group Number: 31
-
-Submission Date: 4/03/2022
+This report follows an in depth analysis of coverage testing and outlines the requirements found on the assignment sheet. The objectives of this assignment are to introduce the concepts of determining the adequacy of a white-box test suite based on its coverage of the code. 
 
 ### Manual Data-Flow Coverage Calculations the Two Methods
 
